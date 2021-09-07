@@ -6,21 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopee Lậu</title>
     <link rel="stylesheet" href="./assest/css/main.css">
+    <link rel="stylesheet" href="./assest/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assest/icons/themify-icons/themify-icons.css">
 </head>
 <body>
     <div id="main">
+        <div class="modal">
+            <div class="modal--ct">
+                <div class="form--login">
+                    <div class="icon--close"><p class="ti-close"></p></div>
+                    <form action="">
+                        <input type="text" placeholder="Nhập Gmail" class="input--gmail">
+                        <input type="password" placeholder="Nhập password" class="input--password">
+                    </form>
+                    <button class="btn--login">Đăng nhập</button>
+                    <div class="texts--forgot">
+                        <p>Forgot Username</p>
+                        <p>Password</p>
+                    </div>
+                    <p class="text--register">Đăng ký nhanh!</p>
+                </div>
+    
+                <div class="form--register">
+                    <div class="icon--close"><p class="ti-close"></p></div>
+                    <form action="">
+                        <input type="text" placeholder="Name" class="input--name">
+                        <input type="text" placeholder="Nhập Gmail" class="input--gmail">
+                        <input type="password" placeholder="Nhập password" class="input--password">
+                    </form>
+                    <button class="btn--login">Đăng ký</button>
+                    <p class="text--login">Quay lại đăng nhập!</p>
+                </div>
+            </div>
+        </div>
         <div id="headMain">
             <div id="head">
-                <div id="logo">Logo</div>
+                <div class="nav--head">
+                    <div id="logo">Logo</div>
 
-                <div id="search">
-                    <label for="">
-                        <input type="text" placeholder="nhập text">
-                    </label>
-                </div>
+                    <div id="search">
+                        <form class="search">
+                            <input type="text" placeholder="Tìm kiếm sản phẩm" class="input--search">
+                            <div class="nav--icon-search">
+                                <img src="./assest/icons/search-solid.svg" alt="#" class="icon--search">
+                            </div>
+                        </form>
+                        <div class="nav--head-items">
+                            <div class="head--items-texts">Điện thoại</div>
+                            <div class="head--items-texts">Xiaomi</div>
+                            <div class="head--items-texts">Đèn pin</div>
+                            <div class="head--items-texts">Đèn trang trí</div>
+                            <div class="head--items-texts">Áo 2hand</div>
+                            <div class="head--items-texts">Máy quay</div>
+                        </div>
+                    </div>
 
-                <div id="login">
-                    <button>login</button>
+                    <div id="login">
+                        <button class="button--login">login</button>
+                    </div>
                 </div>
             </div>
 
@@ -29,5 +72,8 @@
             </div>
         </div>
     </div>
+
+
+    <script src="./assest/js/index.js"></script>
 </body>
 </html>
