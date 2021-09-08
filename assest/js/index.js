@@ -16,3 +16,7 @@ btnLogin.onclick = function () {
 btnClose.onclick = function () {
     modal.classList.remove('active--modal')
 }
+
+login.onclick = function () {
+    alert('')
+}
