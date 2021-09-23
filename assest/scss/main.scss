@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 
 * {
@@ -345,14 +346,14 @@ body {
 
 /**------------------------HEADER CONTENT------------------------*/
 
-#head--content {
-    width: 100%;
-    height: 100%;
-}
+// #head--content {
+//     width: 100%;
+//     height: 100%;
+// }
 
 #head--content-sidebar {
     width: 80px;
-    height: 100vh;
+    height: 100%;
     position: fixed;
     top: 25px;
     left: 30px;
@@ -425,29 +426,43 @@ body {
     cursor: pointer;
 }
 
-#slider {
-    position: relative;
-    width: 89%;
+#container {
+    width: 100%;
     height: 100%;
-    top: 120px;
+    // background: #333;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // position: relative;
+    width: 100%;
+    height: 100%;
+    // top: 120px;
     // left: 10%;
-    z-index: 1;
-    margin-left: 160px;
+    // z-index: 1;
+    // margin-left: 160px;
 } 
 
 .slider {
     padding: 15px;
-    width: 90%;
+    width: 1240px;
     height: 400px;
     background: linear-gradient(135deg , var(--button-color) , #ffffff);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
+    // margin-left: 1000px;
 }
 
 .slider--img {
-    position: absolute;
-    top: 0;
-    left: 35%;
+    position: relative;
+    top: -50%;
+    left: 45%;
     background-image:  url(../../assest/img/tl2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -509,12 +524,9 @@ body {
 // }
 
 #content {
-    // position: relative;
-    // top: 320px;
-    // left: 165px;
-    margin-top: 21%;
-    margin-left: 11%;
-    width: 80%;
+    margin-top: 240px;
+    margin-left: 28px;
+    width: 1240px;
     height: 100%;
     background: #ffffff;
     border-radius: 20px;
@@ -557,6 +569,237 @@ body {
 }
 
 .nav--img {
-    margin-top: 40px;
-    margin-left: 200px;
+    margin-top: 64px;
+    margin-left: 70px;
 }
+
+#list--product {
+    margin-top: 76px;
+    width: 1240px;
+    background: #ffffff;
+    margin-left: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 16px 0;
+}
+
+.list--produc-text {
+    font-weight: 700;
+    font-size: 1.6em;
+    margin-left: 560px;
+    margin-bottom: 24px;
+    color: var(--text-color2);
+}
+
+.list--product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1240px;
+    height: 100%;
+    padding: 8px;
+}
+
+.product {
+    width: 98px;
+    height: 98px;
+    background: #ffffff;
+    margin: 12px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.125);
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+.product:hover {
+    cursor: pointer;
+    background: rgba(168, 168, 168, 0.15);
+    transition: 0.5s;
+}
+
+.product img {
+    margin-left: 18px;
+    margin-top: 5px;
+    width: 60px;
+    height: 60px;
+}
+.product p {
+    font-size: 0.8em;
+    margin-top: 5px;
+    text-align: center;
+}
+
+#product--hot{
+    margin-top: 76px;
+    width: 1240px;
+    height: 100%;
+    background: var(--button-color);
+    margin-left: 30px;
+    border-radius: 20px;
+    padding: 16px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product--hot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1240px;
+    height: 100%;
+    padding: 8px;
+}
+
+.hot {
+    width: 176px;
+    height: 265px;
+    background: #ffffff;
+    margin: 12px;
+    box-shadow: 0 0px 5px rgba(204, 204, 204, 0.125);
+    border-radius: 15px;
+    transition: 0.5s;
+    transition: 0.5s;
+}
+
+.hot:hover {
+    cursor: pointer;
+    padding-top: 8px;
+    transition: 0.5s;
+}
+
+.hot img {
+    width: 175px;
+    border-radius: 15px;
+}
+
+.hot--content {
+    width: 100%;
+}
+
+.hot--content-text {
+    padding: 0 16px;
+    width: 176px;
+    font-size: 0.8em;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 8px;
+}   
+
+.hot--content-main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.coins {
+    margin-top: 8px;
+    margin-left: 8px;
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--text-color2);
+}
+
+.coins--content-sold {
+    margin-top: 13px;
+    margin-right: 8px;
+    font-size: 0.7em;
+    color: #919191;
+}
+
+.product--hot-text {
+    font-weight: 700;
+    font-size: 1.8em;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+#product--today{
+    margin-top: 76px;
+    width: 1240px;
+    height: 100%;
+    background: #ffffff;
+    margin-left: 30px;
+    border-radius: 20px;
+    padding: 16px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.product--today {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 1240px;
+    height: 100%;
+    padding: 8px;
+}
+
+.today {
+    width: 176px;
+    height: 265px;
+    background: #ffffff;
+    margin: 12px;
+    box-shadow: 0 0px 15px rgba(240, 81, 35, 0.15);
+    border-radius: 15px;
+    transition: 0.5s;
+    transition: 0.5s;
+}
+
+.today:hover {
+    cursor: pointer;
+    padding-top: 8px;
+    transition: 0.5s;
+}
+
+.today img {
+    width: 175px;
+    border-radius: 15px;
+}
+
+.today--content {
+    width: 100%;
+}
+
+.today--content-text {
+    padding: 0 16px;
+    width: 176px;
+    font-size: 0.8em;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 8px;
+}   
+
+.today--content-main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.coins {
+    margin-top: 8px;
+    margin-left: 8px;
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--text-color2);
+}
+
+.coins--content-sold {
+    margin-top: 13px;
+    margin-right: 8px;
+    font-size: 0.7em;
+    color: #919191;
+}
+
+.product--today-text {
+    font-weight: 700;
+    font-size: 1.8em;
+    color: var(--text-color2);
+    text-align: center;
+}
+
