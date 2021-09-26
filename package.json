@@ -1,7 +1,6 @@
 {
   "name": "uttshop",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,5 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^6.0.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Quy-Hoang/ShopApp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Quy-Hoang/ShopApp/issues"
+  },
+  "homepage": "https://github.com/Quy-Hoang/ShopApp#readme",
+  "description": ""
 }
