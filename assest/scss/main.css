@@ -41,7 +41,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -345,8 +345,10 @@ body {
 }
 
 .icon--search {
-  width: 16px;
-  height: 16px;
+  font-size: 1em;
+  color: #ffffff;
+  font-family: 700;
+  cursor: pointer;
 }
 
 #login {
@@ -577,7 +579,7 @@ body {
 
 #content {
   margin-top: 240px;
-  margin-left: 28px;
+  margin-left: 16px;
   width: 1240px;
   height: 100%;
   background: #ffffff;
@@ -638,7 +640,7 @@ body {
   margin-top: 76px;
   width: 1240px;
   background: #ffffff;
-  margin-left: 30px;
+  margin-left: 16px;
   border-radius: 20px;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -711,7 +713,7 @@ body {
   width: 1240px;
   height: 100%;
   background: var(--button-color);
-  margin-left: 30px;
+  margin-left: 16px;
   border-radius: 20px;
   padding: 16px 0;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -740,7 +742,7 @@ body {
 }
 
 .hot {
-  width: 176px;
+  width: 175px;
   height: 265px;
   background: #ffffff;
   margin: 12px;
@@ -815,7 +817,7 @@ body {
   width: 1240px;
   height: 100%;
   background: #ffffff;
-  margin-left: 30px;
+  margin-left: 16px;
   border-radius: 20px;
   padding: 16px 0;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -844,7 +846,7 @@ body {
 }
 
 .today {
-  width: 176px;
+  width: 175px;
   height: 265px;
   background: #ffffff;
   margin: 12px;
@@ -912,5 +914,30 @@ body {
   font-size: 1.8em;
   color: var(--text-color2);
   text-align: center;
+}
+
+.btn--seemore {
+  width: 360px;
+  height: 42px;
+  margin-left: 460px;
+  border: none;
+  -webkit-box-shadow: 0 0 10px rgba(110, 110, 110, 0.2);
+          box-shadow: 0 0 10px rgba(110, 110, 110, 0.2);
+  cursor: pointer;
+  font-size: 1em;
+  color: var(--text-color2);
+  font-weight: 700;
+  border-radius: 5px;
+  background: #ffffff;
+  border: 0.5px solid rgba(0, 0, 0, 0.0125);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn--seemore:hover {
+  background: var(--button-color);
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=main.css.map */
